@@ -53,22 +53,21 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	width: 90%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
 	flex-wrap: wrap;
-	border-bottom: 3px solid #77a466;
 }
 
 header h1 {
 	padding: 38px 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+	text-align: center;
+	width: 100%;
+	border-bottom: 3px solid #77a466;
 }
+
 header h1 span {
 	color: #77a466;
 }
@@ -79,24 +78,21 @@ header nav {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	width: 100%;
+}
 
-}
 header nav ul {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
 	padding: 0;
+	list-style: none;
+	width: 100%;
 }
+
 header nav ul li {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
 	padding: 0 10px;
+	text-align: center;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -106,6 +102,7 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -116,11 +113,12 @@ header nav ul li a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
+	
 }
 .main-image img {
 	border-bottom: 3px solid #77a466;
-	width: 100%;
+	max-width: 100%;
 }
 
 .main-title {
@@ -142,10 +140,7 @@ header nav ul li a{
 .section-three {
 	/* width: 33%; */
 	border-top: 1px solid #eee;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+	width: 100%;
 }
 
 .section-one h4 {
@@ -189,6 +184,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 }
 footer span {
 	font-family: 'Galada', cursive;
