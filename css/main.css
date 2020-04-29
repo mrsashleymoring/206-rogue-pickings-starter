@@ -8,14 +8,16 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-size: 1em;
+	flex-wrap: wrap;
 }
 
 .container{
 	max-width: 1200px;
-	margin: 0 auto;
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 h1,
@@ -25,6 +27,10 @@ h4 {
 	color: black;
 	text-transform: uppercase;
 	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 h1 {
 	font-size: 1.875em;
@@ -47,37 +53,50 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
-	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	border-bottom: 3px solid #77a466;
 }
 
 header h1 {
-	float: left;
-	margin: 0;
 	padding: 38px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	float: right;
 	padding: 46px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
 }
 header nav ul {
-	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 	padding: 0;
 }
 header nav ul li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
 	padding: 0 10px;
-	display: inline;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -87,25 +106,26 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
-	margin: 0 auto;
-	clear: both;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .main-image {
-	height: auto;
-	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 .main-image img {
-	width: 100%;
 	border-bottom: 3px solid #77a466;
+	width: 100%;
+	height: auto;
 }
 
 .main-title {
-	height: auto;
-	float: left;
+
 }
 .main-title h3 {
 	text-align: left;
@@ -115,16 +135,18 @@ header nav ul li a{
 .main-title p {
 	padding: 0;
 	font-size: 1em;
-	line-height: 25px;
+	line-height: 1.5625em;
 }
 
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
-	height: auto;
-	float: left;
+	/* width: 33%; */
 	border-top: 1px solid #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .section-one h4 {
@@ -138,7 +160,7 @@ header nav ul li a{
 
 .section-two h4,
 .section-three h4 {
-	padding: 10px 30px;
+	padding: 10px 30px
 }
 
 .menu {
@@ -163,10 +185,7 @@ header nav ul li a{
 
 /*The widths are in a percentage!*/
 footer {
-	height: 50px;
 	border-top: 3px solid #eee;
-	margin: 0 auto;
-	clear: both;
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -177,4 +196,19 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+
+/****     Breakpoints     ****/
+
+@media all and (min-width:768px) {
+	/* Tablet styles here */
+
+
+}
+
+@media all and (min-width: 1200px) {
+	/* Desktop styles here */
+
+
 }
